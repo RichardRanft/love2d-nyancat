@@ -21,4 +21,8 @@ https://love2d.org
 
 Download a pre-packaged distribution or build from source : https://github.com/love2d/love
 
-To play the game, you'll want to clone this repository, grab a distribution of Love2D, install Love2D, then you can drag the game script folder onto the Love2D executable and play. 
+To play the game, you'll want to clone this repository, grab a distribution of Love2D, install Love2D, then you can drag the game script folder onto the Love2D executable and play. https://youtu.be/ytVUGj9uZJk?si=7vNxZsEbNFhPihVV shows how to launch the game once you have both the game repository cloned and Love2D installed.
+
+Clicking NyanCat will reverse its direction and teleport it vertically to a random location, adding one point to the score.  If NyanCat escapes off of either edge the score is reduced by one point.  There is no lose condition: the score will just drop through the floor.  Exercise for the reader - either stop decrementing score at 0 or exit to main menu at -1.
+
+Up/Down arrows control the music volume.
