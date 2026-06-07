@@ -2,7 +2,7 @@
 A simple click-the-moving-thing game, NyanCat-themed.
 
 I originally wrote this game in Torque 2D ( https://torque3d.org/torque2D ) in about three hours at a Border's Book Store in
-Las Vegas as a walkthrough of how to create a simple game.  It took me about six hours to port it to Love2d.
+Las Vegas as a walkthrough of how to create a simple game.  It took me about six hours to port it to Love2d as a kind of crash course, since I have used Lua for years but this is my first Love2D project.
 
 I have only tested this on Windows.
 
@@ -21,4 +21,8 @@ https://love2d.org
 
 Download a pre-packaged distribution or build from source : https://github.com/love2d/love
 
-To play the game, you'll want to clone this repository, grab a distribution of Love2D, install Love2D, then you can drag the game script folder onto the Love2D executable and play. 
+To play the game, you'll want to clone this repository, grab a distribution of Love2D, install Love2D, then you can drag the game script folder onto the Love2D executable and play. https://youtu.be/ytVUGj9uZJk?si=7vNxZsEbNFhPihVV shows how to launch the game once you have both the game repository cloned and Love2D installed.
+
+Clicking NyanCat will reverse its direction and teleport it vertically to a random location, adding one point to the score.  If NyanCat escapes off of either edge the score is reduced by one point.  There is no lose condition: the score will just drop through the floor.  Exercise for the reader - either stop decrementing score at 0 or exit to main menu at -1.
+
+Up/Down arrows control the music volume.
