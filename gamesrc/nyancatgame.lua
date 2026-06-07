@@ -138,19 +138,19 @@ function NYANCATGAME.update(dt)
     if NYANCAT.direction == 1 then
         local screenWidth = love.graphics.getWidth();
         if NYANCAT.x > screenWidth then
-            logging.INFO("Nyan Cat went off the right edge!  Direction : " .. NYANCAT.direction, NYANCATGAME.SCRIPTNAME);
+            logging.DEBUG("Nyan Cat went off the right edge!  Direction : " .. NYANCAT.direction, NYANCATGAME.SCRIPTNAME);
             NYANCATGAME.score = NYANCATGAME.score - 1;
             NYANCAT.flipDirection();
             NYANCAT.x = screenWidth;
-            logging.INFO("NOTES: " .. NYANCAT.x .. " (Nyan Cat X), " .. screenWidth .. " (Screen Width)", NYANCATGAME.SCRIPTNAME);
+            logging.DEBUG("NOTES: " .. NYANCAT.x .. " (Nyan Cat X), " .. screenWidth .. " (Screen Width)", NYANCATGAME.SCRIPTNAME);
         end
     else
         if NYANCAT.x < 0 then
-            logging.INFO("Nyan Cat went off the left edge!  Direction : " .. NYANCAT.direction, NYANCATGAME.SCRIPTNAME);
+            logging.DEBUG("Nyan Cat went off the left edge!  Direction : " .. NYANCAT.direction, NYANCATGAME.SCRIPTNAME);
             NYANCAT.x = 0
             NYANCATGAME.score = NYANCATGAME.score - 1;
             NYANCAT.flipDirection();
-            logging.INFO("NOTES: " .. NYANCAT.x .. " (Nyan Cat X)", NYANCATGAME.SCRIPTNAME);
+            logging.DEBUG("NOTES: " .. NYANCAT.x .. " (Nyan Cat X)", NYANCATGAME.SCRIPTNAME);
         end
     end
     NYANCAT.update(dt);
